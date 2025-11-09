@@ -37,6 +37,8 @@ echo "::group:: Install Packages"
 # Example using COPR with isolated pattern:
 # copr_install_isolated "ublue-os/staging" package-name
 
+copr_install_isolated "jdxcode/mise" mise
+
 echo "::endgroup::"
 
 echo "::group:: System Configuration"
