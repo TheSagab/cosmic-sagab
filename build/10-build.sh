@@ -50,4 +50,4 @@ systemctl enable podman.socket
 echo "::endgroup::"
 
 echo "Custom build complete!"
-chmod +x build/20-yourscript.sh
+chmod +x build/30-cosmic-desktop.sh
