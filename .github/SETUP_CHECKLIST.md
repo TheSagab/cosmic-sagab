@@ -18,7 +18,7 @@ git push origin main
 
 ### 4. Deploy
 ```bash
-sudo bootc switch --transport registry ghcr.io/YOUR_USERNAME/YOUR_REPO:stable
+sudo bootc switch --transport registry ghcr.io/thesagab/cosmic-sagab:stable
 sudo systemctl reboot
 ```
 
