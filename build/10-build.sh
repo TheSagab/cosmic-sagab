@@ -51,5 +51,7 @@ echo "::endgroup::"
 
 echo "Custom build complete!"
 
+chmod +x /ctx/build/11-vscode.sh
 /ctx/build/11-vscode.sh
+chmod +x /ctx/build/30-cosmic-desktop.sh
 /ctx/build/30-cosmic-desktop.sh
