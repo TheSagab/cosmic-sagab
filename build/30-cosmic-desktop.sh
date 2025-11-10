@@ -25,8 +25,6 @@ source /ctx/build/copr-helpers.sh
 
 echo "::group:: Install COSMIC Desktop"
 
-# Install COSMIC desktop from System76's COPR
-# Using isolated pattern to prevent COPR from persisting
 dnf5 install -y @cosmic-desktop-environment
 
 echo "COSMIC desktop installed successfully"
@@ -49,17 +47,6 @@ DesktopNames=COSMIC
 COSMICDESKTOP
 
 echo "Display manager configured"
-echo "::endgroup::"
-
-echo "::group:: Install Additional Utilities"
-
-# Install additional utilities that work well with COSMIC
-dnf5 install -y \
-    kitty \
-    flatpak \
-    xdg-desktop-portal-cosmic
-
-echo "Additional utilities installed"
 echo "::endgroup::"
 
 echo "COSMIC desktop installation complete!"
