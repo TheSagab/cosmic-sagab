@@ -56,6 +56,12 @@ dnf5 -y install --enablerepo=code \
 
 echo "::endgroup::"
 
+echo "::group:: Installing Brew"
+
+copr_install_isolated "ublue-os:packages" ublue-brew
+
+echo "::endgroup::"
+
 echo "::group:: System Configuration"
 
 # Enable/disable systemd services
