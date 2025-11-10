@@ -58,7 +58,7 @@ echo "::endgroup::"
 
 echo "::group:: Installing Brew"
 
-copr_install_isolated "ublue-os:packages" ublue-brew
+copr_install_isolated "ublue-os/packages" ublue-brew
 
 echo "::endgroup::"
 
