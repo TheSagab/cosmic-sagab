@@ -51,4 +51,5 @@ echo "::endgroup::"
 
 echo "Custom build complete!"
 
+/ctx/build/11-vscode.sh
 /ctx/build/30-cosmic-desktop.sh
