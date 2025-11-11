@@ -38,6 +38,10 @@ echo "::group:: Install Packages"
 # copr_install_isolated "ublue-os/staging" package-name
 
 copr_install_isolated "jdxcode/mise" mise
+copr_install_isolated "atim/starship" starship
+dnf5 install -y fish btop neovim python3-neovim helix
+dnf5 install -y --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
+dnf5 install -y ghostty zed
 
 echo "::endgroup::"
 
